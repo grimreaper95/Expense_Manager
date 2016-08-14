@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+    <include layout="@layout/mytoolbar"
+        android:id="@+id/mytoolbar1">
+    </include>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etamount"
+        android:layout_marginTop="92dp"
+        android:layout_below="@+id/mytoolbar1"
+        android:layout_centerHorizontal="true"
+        android:hint="Amount.."
+        android:text="0.0" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:id="@+id/bdone"
+        android:layout_marginBottom="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rs."
+        android:id="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@+id/etamount"
+        android:layout_toStartOf="@+id/etamount" />
+
+    <RadioGroup
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:id="@+id/rdGroup"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal"
+        >
+
+    <RadioButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deduct"
+        android:id="@+id/rbdeduct"
+        android:checked="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="30dp"
+        />
+
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/rbadd"
+        android:checked="false"
+        android:layout_marginLeft="68dp"
+        android:layout_below="@+id/etamount"
+        />
+    >
+
+</RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <RadioGroup
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:id="@+id/rdGroup_2"
+        android:layout_marginTop="250dp"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash"
+            android:id="@+id/rbcash"
+            android:checked="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="30dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-transaction"
+            android:id="@+id/rbetrans"
+            android:checked="false"
+            android:layout_marginLeft="80dp"
+            android:layout_below="@+id/etamount"
+            />
+        >
+
+    </RadioGroup>
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Category : "
+        android:id="@+id/tvcatname"
+        android:layout_below="@+id/mytoolbar1"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etdetails"
+        android:hint="Expenditure details :"
+        android:layout_marginBottom="41dp"
+        android:layout_above="@+id/bdone"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/etdate"
+        android:layout_below="@+id/rdGroup_2"
+        android:layout_toEndOf="@+id/textView"
+        android:focusable="false"
+        android:hint="Choose date" />
+
+</RelativeLayout>

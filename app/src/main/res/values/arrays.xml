@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="pages">
+        <item>
+            Add Money
+        </item>
+        <item>
+            Home
+        </item>
+        <item>
+            Graph
+        </item>
+        <item>
+            All Transactions
+        </item>
+        <item>
+            Search
+        </item>
+        <item>
+            Logout
+        </item>
+    </array>
+
+</resources>
