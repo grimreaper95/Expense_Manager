@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
 
                             ContentValues values2 = new ContentValues();
                             values2.put("cat_no",1000);
-                            values2.put("cat_name","addmoney");
+                            values2.put("cat_name","+Wallet");
                             values2.put("user_name",username);
                             db.insert("categories",null,values2);
 
@@ -231,8 +231,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.my_menu,menu);
+        /*MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.my_menu,menu);*/
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -241,9 +241,9 @@ public class MainActivity extends AppCompatActivity {
             case android.R.id.home:
                 dlayout.openDrawer(GravityCompat.START);  // OPEN DRAWER
                 return true;
-            case R.id.settings:
+            /*case R.id.settings:
                 Intent i = new Intent(this,Pref.class);
-                startActivity(i);
+                startActivity(i);*/
         }
         return super.onOptionsItemSelected(item);
     }
