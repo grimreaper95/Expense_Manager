@@ -3,7 +3,7 @@
     android:id="@+id/mainlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.shashank.expensemanager.MainActivity"
+    tools:context="grimreaper.shashank.expensemanager.MainActivity"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     >

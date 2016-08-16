@@ -139,7 +139,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="date"
-        android:ems="10"
+        android:ems="11"
         android:id="@+id/etdate"
         android:layout_below="@+id/rdGroup_2"
         android:layout_toEndOf="@+id/textView"
