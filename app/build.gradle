@@ -3,9 +3,9 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         config {
-            keyAlias 'expense manager'
+            keyAlias 'expensemanager'
             keyPassword 'sahil95'
-            storeFile file('E:/Android App development/Expense Manager/expensemanagerkey5.jks')
+            storeFile file('E:/Android/Production on Google Play/expensemanagerkey.jks')
             storePassword 'sahil95'
         }
     }

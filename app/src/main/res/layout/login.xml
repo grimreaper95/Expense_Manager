@@ -2,54 +2,43 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TextView
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Username or Email Id"
-        android:id="@+id/textView2"
-        android:layout_marginTop="78dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="105dp"
+        >
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/etuserid"
+            android:hint="Username or Email Id"/>
+    </android.support.design.widget.TextInputLayout>
 
-    <EditText
+    <android.support.design.widget.TextInputLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/etuserid"
-        android:layout_below="@+id/textView2"
-        android:layout_alignEnd="@+id/textView2"
-        android:layout_marginTop="24dp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/etpassword"
-        android:layout_below="@+id/etuserid"
-        android:layout_alignStart="@+id/etuserid"
-        android:layout_marginTop="95dp" />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Password"
-        android:id="@+id/textView3"
-        android:layout_marginTop="220dp"
-        android:layout_alignStart="@+id/etpassword" />
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="80dp">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/etpassword"
+            android:hint="Password"/>
+    </android.support.design.widget.TextInputLayout>
 
     <Button
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:text="Log In"
         android:id="@+id/blogin"
-        android:layout_marginTop="119dp"
+        android:layout_marginTop="319dp"
         android:background="@android:color/holo_red_dark"
-        android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
         android:textColor="#FFFFFF" />
 
