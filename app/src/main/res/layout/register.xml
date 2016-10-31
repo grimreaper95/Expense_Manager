@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
+                android:layout_gravity="centreHorizontal"
     android:id="@+id/registration"
     >
 
@@ -12,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Register here !"
+        android:text="Register here"
         android:id="@+id/textView5"
         android:layout_marginTop="46dp"
         android:layout_below="@+id/mytoolbar1"
@@ -45,7 +46,6 @@
         android:text="Sign Up!"
         android:id="@+id/bregister"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginBottom="90dp" />
 
     <EditText
@@ -55,7 +55,6 @@
         android:ems="10"
         android:id="@+id/etconpassword"
         android:layout_marginTop="320dp"
-        android:layout_centerHorizontal="true"
         android:hint="Confirm Password" />
 
     <!-- <android.support.design.widget.CoordinatorLayout
